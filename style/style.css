@@ -1,0 +1,247 @@
+body{
+    height: 100vh;
+    background-color: var(--body-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/* main content */
+main#content{
+    width: 500px;
+    height: 400px;
+    border-radius: 10px;
+    padding: 0 10px;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+}
+main#content h1{
+    margin-top: 1rem;
+    align-self: center;
+    margin-bottom: 1rem;
+    font-family: var(--font-family);
+    font-size: 1.5rem;
+    color: var(--font-color);
+}
+/* menu content style */
+main#content div#menu{
+    z-index: 3;
+    height: 60%;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+main#content div#menu h2{
+    margin-bottom: 1rem;
+    align-self: center;
+    font-family: var(--font-family);
+    color: var(--font-color);
+}
+main#content div#menu div#button-area{
+    height: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+main#content div#menu div#button-area button.menu-button{
+    height: 100%;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+}
+main#content div#menu div#button-area button.menu-button:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+/* add item menu style */
+main#content div#add-item-menu{
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    display: none;
+    flex-direction: column;
+    
+}
+main#content div#add-item-menu h2{
+    margin-top: 1rem;
+    align-self: center;
+    margin-bottom: 1rem;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    color: var(--font-color);
+}
+
+main#content div#add-item-menu div#add-item-area{
+    margin-top: 25px;
+    font-family: var(--font-family);
+}
+main#content div#add-item-menu input{
+    width: 50%;
+    padding: 2px 10px;
+    border-radius: 8px;
+}
+main#content div#add-item-menu button#add-button{
+    padding: 2px 10px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+main#content div#add-item-menu button#add-button:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+main#content div#add-item-menu button.return-menu{
+    cursor: pointer;
+    margin-top: 50px;
+    border-radius: 8px;
+    padding: 2px 5px;
+    width: 200px;
+    align-self: center;
+    font-family: var(--font-family);
+}
+main#content div#add-item-menu button.return-menu:hover{
+    transform: scale(1.04);
+}
+
+/* Categories menu style */
+main#content div#categorie-menu{
+    z-index: 1;
+    width: 100%;
+    height: 80%;
+    background-color: var(--bg-color);
+    display: none;
+    flex-direction: column;
+}
+main#content div#categorie-menu h2{
+    align-self: center;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    color: var(--font-color);
+}
+main#content div#categorie-menu div#selection-area{
+    width: 100%;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+main#content div#categorie-menu div#selection-area button.categorie-button{
+    cursor: pointer;
+    width: 120px;
+    height: 100px;
+    border-radius: 8px;
+    background-color: #fff;
+    font-family: var(--font-family);
+
+}
+main#content div#categorie-menu div#selection-area button.categorie-button:hover,
+main#content div#categorie-menu div#selection-area button.categorie-button:focus{
+    transform: scale(1.04);
+}
+main#content div#categorie-menu button#add-categorie-button{
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 5px 5px;
+    align-self: center;
+    font-family: var(--font-family);
+}
+main#content div#categorie-menu button#add-categorie-button:hover{
+    transform: scale(1.02);
+}
+/* remove-item menu */
+main#content div#remove-item-menu{
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    display: none;
+    flex-direction: column;
+}
+main#content div#remove-item-menu h2{
+    margin-top: 1rem;
+    align-self: center;
+    margin-bottom: 1rem;
+    font-family: var(--font-family);
+    font-size: 1rem;
+    color: var(--font-color);
+}
+
+main#content div#remove-item-menu div#remove-item-area{
+    margin-top: 25px;
+    font-family: var(--font-family);
+}
+main#content div#remove-item-menu input{
+    width: 50%;
+    padding: 2px 10px;
+    border-radius: 8px;
+}
+main#content div#remove-item-menu button#remove-button{
+    padding: 2px 10px;
+    border-radius: 8px;
+    background-color: #fff;
+}
+main#content div#remove-item-menu button#remove-button:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+main#content div#remove-item-menu button.return-menu{
+    cursor: pointer;
+    margin-top: 50px;
+    border-radius: 8px;
+    padding: 2px 5px;
+    width: 200px;
+    align-self: center;
+    font-family: var(--font-family);
+}
+main#content div#add-item-menu button.return-menu:hover{
+    transform: scale(1.04);
+}
+/* list-menu style */
+main#content div#list-menu{
+    z-index: 2;
+    background-color: var(--bg-color);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+main#content div#list-menu .list{
+    width: 100%;
+    display: flex;
+    gap: 5px;
+}
+main#content div#list-menu .list h3{
+    font-family: var(--font-family);
+    color: var(--font-color);
+    font-weight: 600;
+}
+main#content div#list-menu div.list span{
+    display: flex;
+    font-family: var(--font-family);
+    color: var(--font-color);
+    text-transform: capitalize;
+}
+main#content div#list-menu button.return-menu{
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 8px;
+    padding: 2px 5px;
+    width: 200px;
+    font-family: var(--font-family);
+}
+main#content div#list-menu button.return-menu:hover{
+    transform: scale(1.04);
+}
+

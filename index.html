@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/reset.css">
+    <link rel="stylesheet" href="./style/vars.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Quarto dia</title>
+</head>
+<body>
+    <main id="content">
+        <h1>Lista de compras</h1>
+       <div id="menu">
+            <h2>O que você deseja?</h2>
+            <div id="button-area">
+                <button type="submit" class="menu-button" id="start-addition">Adicionar item</button>
+                <button type="submit" class="menu-button" id="start-removal">remover item</button>
+                <button type="submit" class="menu-button" id="check-list">Conferir lista</button>
+            </div>
+            
+       </div>
+       <div id="add-item-menu">
+           <h2>Que item deseja adicionar?</h2>
+           <div id="add-item-area">
+                <input type="text" name="" id="add-input" placeholder="Escreva o item aqui" maxlength="22">
+                <button type="submit" id="add-button">Adicionar item</button>
+           </div>
+           <span class="alert-error"></span>
+           <button class="return-menu">Voltar ao menu principal</button>
+       </div>
+       <div id="categorie-menu">
+            <h2>Qual categoria pertence o item?</h2>
+            <div id="selection-area">
+                <button type="submit" class="categorie-button" value="0">Laticinios</button>
+                <button type="submit" class="categorie-button" value="1">Doces</button>
+                <button type="submit" class="categorie-button" value="2">Congelados</button>
+                <button type="submit" class="categorie-button" value="3">Frutas</button>
+                <button type="submit" class="categorie-button" value="4">Verduras</button>
+                <button type="submit" class="categorie-button" value="5">Outros</button>
+            </div>
+       </div>
+        <div id="remove-item-menu">
+            <h2>Que item deseja remover?</h2>
+            <div id="remove-item-area">
+                 <input type="text" name="" id="remove-input" placeholder="Escreva o item aqui" maxlength="22">
+                 <button type="submit" id="remove-button">Remover item</button>
+            </div>
+            <span class="alert-error"></span>
+            <button class="return-menu">Voltar ao menu principal</button>
+        </div>
+       <div id="list-menu">
+           <div class="list">
+               <h3 class="categorie-name">Laticinios:</h3>
+               <span id="laticinios-items"></span>
+           </div>
+           <div class="list">
+                <h3>Doces:</h3>
+                <span id="doces-items"></span>
+            </div>
+            <div class="list">
+                <h3>Congelados:</h3>
+                <span id="congelados-items"></span>
+            </div>
+            <div class="list">
+                <h3>Frutas:</h3>
+                <span id="frutas-items"></span>
+            </div>
+            <div class="list">
+                <h3>Verduras:</h3>
+                <span id="verduras-items"></span>
+            </div>
+            <div class="list">
+                <h3>Outros:</h3>
+                <span id="outros-items"></span>
+            </div>
+            <button class="return-menu">Voltar ao menu principal</button>
+       </div>
+    </main>
+    <script src="./js/vars.js"></script>
+    <script src="./js/functions.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
